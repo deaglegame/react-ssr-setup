@@ -2,6 +2,7 @@ import { getRoute } from './routes';
 
 const testRoutesConfig = {
     home: '/',
+    symbol: '/symbol/:symbol',
     users: {
         list: '/users',
         view: '/users/:id',

@@ -9,6 +9,8 @@ import App from '../shared/App';
 import IntlProvider from '../shared/i18n/IntlProvider';
 import createHistory from '../shared/store/history';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const history = createHistory();
 
 // Create/use the store

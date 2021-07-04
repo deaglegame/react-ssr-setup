@@ -1,4 +1,4 @@
-import { Locale, Page, Notification } from './types';
+import { Locale, Page, Notification } from '../types';
 
 export const ActionTypes = {
     SETLOCALE: 'app/set-locale',
@@ -16,13 +16,15 @@ export const ActionTypes = {
     LOAD_BLOGS_SUCCESS: "LOAD_BLOGS_SUCCESS",
 };
 
+
+// for reference
 export const setLocale = (locale: Locale) => ({
     type: ActionTypes.SETLOCALE,
     payload: locale,
 });
 
 
-/* Settings / General App Actions */
+/* Settings Actions */
 
 export const changePage = ({ page, symbol }: Page) => ({
     type: ActionTypes.CHANGE_PAGE,
@@ -41,4 +43,4 @@ export const pushNotification = ({ title, message, type, delay, callback }: Noti
         delay: delay,
         callback: callback
     }
-});
+})
